@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fx:id="canvasThat" fitHeight="456.0" fitWidth="900.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" />
+        <Button layoutX="14.0" layoutY="37.0" mnemonicParsing="false" onAction="#backtoHome" text="Back">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="779.0" layoutY="37.0" mnemonicParsing="false" onAction="#clearScreen" text="Clear screen">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <ColorPicker fx:id="colorPicker" layoutX="644.0" layoutY="40.0" onAction="#changeColor" />
+        <JFXToggleButton fx:id="toggleAnnote" layoutX="482.0" layoutY="24.0" onAction="#switchAnnote" prefHeight="40.0" prefWidth="142.0" text="Annote" />
+        <JFXSlider fx:id="slider" layoutX="562.0" layoutY="82.0" prefHeight="14.0" prefWidth="322.0" />
+        <TextField fx:id="addTextLabel" layoutX="96.0" layoutY="40.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter text" />
+        <Button layoutX="283.0" layoutY="37.0" mnemonicParsing="false" onAction="#addText" text="Add">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <JFXSlider fx:id="textSize" layoutX="94.0" layoutY="82.0" prefHeight="14.0" prefWidth="238.0" />
+        <Canvas fx:id="canvasThis" height="479.0" layoutY="121.0" width="900.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label alignment="CENTER" style="-fx-font-size: 20px;" text="Group Management" />
+    <TitledPane text="Existing Groups">
+        <ListView fx:id="existingGroupsListView" prefHeight="200" prefWidth="200" />
+    </TitledPane>
+    <TitledPane text="Create Group">
+        <VBox spacing="10">
+            <TextField fx:id="groupNameTextField" promptText="Enter Group Name" />
+            <Button onAction="#createGroup" text="Create Group" />
+        </VBox>
+    </TitledPane>
+    <TitledPane text="Delete Group">
+        <VBox spacing="10">
+            <Label text="Select Group to Delete:" />
+            <ComboBox fx:id="deleteGroupComboBox" prefWidth="200" />
+            <Button onAction="#deleteGroup" text="Delete Group" />
+        </VBox>
+    </TitledPane>
+    <TitledPane text="Enroll in Group">
+        <VBox spacing="10">
+            <Label text="Select Group to Join:" />
+            <ComboBox fx:id="enrollGroupComboBox" prefWidth="200" />
+            <Button onAction="#enrollInGroup" text="Enroll in Group" />
+        </VBox>
+    </TitledPane>
+
+</VBox>

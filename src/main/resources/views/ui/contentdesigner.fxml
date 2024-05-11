@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane layoutX="154.0" layoutY="227.0" prefHeight="700.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="62.0" prefWidth="1200.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#openCourseDesigner" text="Back">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="511.0" layoutY="14.0" text="Physics Warriors">
+                            <font>
+                                <Font name="System Bold" size="23.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane prefHeight="638.0" prefWidth="214.0" style="-fx-background-color: #A7B4C4;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button layoutX="32.0" layoutY="60.0" mnemonicParsing="false" text="Course Designer ">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="31.0" layoutY="110.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="138.0" text="Group">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="69.0" layoutY="560.0" mnemonicParsing="false" text="LogOut">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane layoutX="629.0" layoutY="27.0" prefHeight="455.0" prefWidth="298.0" style="-fx-background-color: D3DDE5;">
+                            <children>
+                                <Text layoutX="25.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calender">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                        <Text layoutX="74.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books &amp; Refferences">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Content for">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="260.0" layoutY="25.0" text="Level 1">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Label>
+                        <Text layoutX="82.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pictures">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="74.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lectures &amp; PDF">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../pictures/book.png" />
+                            </image></ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../pictures/pdf.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../pictures/picture.png" />
+                            </image>
+                        </ImageView>
+                        <Hyperlink layoutX="98.0" layoutY="216.0" prefHeight="24.0" prefWidth="137.0" text="Add Book 1">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="242.0" text="Add Book 2">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="268.0" text="Add Book 3">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="358.0" text="Add Slide 1">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="382.0" text="Add Slide 2">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="406.0" text="Add slide 3">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="506.0" text="Add Picture 1">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="530.0" text="Add Picture 2">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="98.0" layoutY="554.0" text="Add Picture 3">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Hyperlink>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
